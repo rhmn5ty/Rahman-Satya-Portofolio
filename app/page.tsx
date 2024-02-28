@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center px-6">
           <div className="flex items-center">
             <Image src="/logo-satya.png" alt="Logo" width={50} height={50} className="rounded-full" />
-            <h1 className="text-3xl font-bold ml-4">SATYA'S PAGE</h1>
+            <h1 className="text-3xl font-bold ml-4">RAHMAN SATYA</h1>
           </div>
           <nav>
             <ul className="flex space-x-6">
