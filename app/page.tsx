@@ -7,7 +7,7 @@ export default function Home() {
       <header className="bg-dark-blue text-gold py-6 fixed w-full z-10" style={{ backgroundColor: '#003366', color: '#FFD700' }}>
         <div className="container mx-auto flex justify-between items-center px-6">
           <div className="flex items-center">
-            <Image src="/logo-satya.png" alt="Logo" width={50} height={50} className="rounded-full" />
+            <Image src="/Logo-Satya.png" alt="Logo" width={50} height={50} className="rounded-full" />
             <h1 className="text-3xl font-bold ml-4">RAHMAN SATYA</h1>
           </div>
           <nav>
@@ -55,7 +55,7 @@ export default function Home() {
   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* Card 1 */}
     <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
-      <Image src="/head-of-persatuan-sepakbola-itb.png" alt="Head of Persatuan Sepakbola ITB Logo" width={50} height={50} className="mx-auto"/>
+      <Image src="/ps-itb.png" alt="Head of Persatuan Sepakbola ITB Logo" width={50} height={50} className="mx-auto"/>
       <h3 className="text-xl font-semibold">Head of Persatuan Sepakbola ITB</h3>
       <p className="text-sm text-gold">Sept 2023 - Present</p>
       <p>Improved team performance and built a lively sports culture at ITB. Led key football events, encouraging skills, teamwork, and sportsmanship. Contributed to Indonesian football development.</p>
