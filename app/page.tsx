@@ -1,62 +1,86 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center p-8">
-      <section className="text-center">
-        <Image
-          src="/profile.jpg" // Assuming you have a profile.jpg in your public folder
-          alt="Profile Picture"
-          width={150}
-          height={150}
-          className="rounded-full"
-        />
-        <h1 className="text-4xl font-bold mt-4">Your Name</h1>
-        <p className="text-xl mt-2">Your Professional Tagline</p>
-        <p className="mt-2">A brief introduction about yourself, your background, and what you do. This section should be engaging and give a snapshot of your professional persona to attract recruiters.</p>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-3xl font-semibold">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
-          {/* List your skills here */}
-          <span className="px-4 py-2 bg-gray-200 rounded-full">JavaScript</span>
-          <span className="px-4 py-2 bg-gray-200 rounded-full">React</span>
-          <span className="px-4 py-2 bg-gray-200 rounded-full">Next.js</span>
-          {/* Add more as needed */}
-        </div>
-      </section>
-
-      <section className="mt-10 w-full">
-        <h2 className="text-3xl font-semibold text-center">Portfolio</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-          {/* Portfolio items */}
-          <div className="border rounded-lg p-4">
-            <Image
-              src="/project1.jpg" // Replace with your project image
-              alt="Project 1"
-              width={400}
-              height={225}
-              className="rounded"
-            />
-            <h3 className="mt-2 text-xl font-semibold">Project Title</h3>
-            <p className="text-sm mt-2">Brief description of the project. What was your role, what technologies were used, etc.</p>
-            <Link href="/projects/project1"><a className="text-blue-500 hover:underline mt-2 inline-block">Read more</a></Link>
+    <>
+      <header className="bg-dark-blue text-gold py-6 fixed w-full z-10" style={{ backgroundColor: '#003366', color: '#FFD700' }}>
+        <div className="container mx-auto flex justify-between items-center px-6">
+          <div className="flex items-center">
+            <Image src="/logo-satya.png" alt="Logo" width={50} height={50} className="rounded-full" />
+            <h1 className="text-3xl font-bold ml-4">SATYA'S PAGE</h1>
           </div>
-          {/* Repeat for other projects */}
+          <nav>
+            <ul className="flex space-x-6">
+              <li><a href="#summary" className="hover:text-gray-300">Summary</a></li>
+              <li><a href="#education" className="hover:text-gray-300">Education</a></li>
+              <li><a href="#experience" className="hover:text-gray-300">Experience</a></li>
+              <li><a href="#projects" className="hover:text-gray-300">Projects</a></li>
+              <li><a href="#skills" className="hover:text-gray-300">Skills</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
+      </header>
+      <main className="pt-20" style={{ background: 'linear-gradient(to right, #001d3d, #003366)', backgroundColor: '#001d3d', color: '#FFD700', backgroundSize: 'cover' }}>
+      <section id="summary" className="min-h-screen flex items-center justify-center">
+  <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left max-w-4xl mx-auto w-full px-4 md:px-8">
+    <div className="md:w-1/2">
+      <h1 className="text-4xl font-bold">RAHMAN SATYA</h1>
+      <p className="text-l mt-4">As an Information System and Technology student at ITB, I am deeply passionate about data and machine learning. My academic and extracurricular activities have equipped me with a strong foundation in data processing, statistical analysis, and programming. I thrive on using data to solve real-world problems and drive informed decisions. My goal is to continually expand my knowledge and apply it towards creating impactful solutions in the field of data and technology.</p>
+      <div className="mt-4">
+        <p className="mt-4">Email: <a href="rahman.satya@gmail.com" className="underline text-blue-500">rahman.satya@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rahman-satya/" className="underline text-blue-500">www.linkedin.com/in/rahman-satya/</a></p>
+      </div>
+    </div>
+    <div className="md:w-1/2 mt-8 md:mt-0 flex justify-end">
+      <Image
+        src="/Foto-Satya.jpg"
+        alt="Rahman Satya"
+        width={300}
+        height={200}
+        className="rounded-full"
+        priority
+      />
+    </div>
+  </div>
+</section>
 
-      <section className="mt-10 w-full">
-        <h2 className="text-3xl font-semibold text-center">Contact Me</h2>
-        <form className="flex flex-col items-center mt-4">
-          <input type="text" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
-          <input type="email" placeholder="Your Email" className="input input-bordered w-full max-w-xs mt-4" />
-          <textarea placeholder="Your Message" className="textarea textarea-bordered w-full max-w-xs mt-4"></textarea>
-          <button type="submit" className="btn btn-primary mt-4">Send</button>
-        </form>
-      </section>
-    </main>
+        <section id="education" className="min-h-screen flex flex-col justify-center items-center text-center">
+        <h2 className="text-2xl font-semibold">Education</h2>
+          <p><strong>Bachelor in Information and System Technology, Institut Teknologi Bandung</strong><br />Aug 2021 - expected until Oct 2025</p>
+          <p>Relevant Coursework: IST Resource Management, System Requirements Analysis, Organization & Management of Industrial Companies, Database Management, Object Oriented Programming</p>
+        </section>
+        <section id="experience" className="min-h-screen flex flex-col justify-center items-center text-center">
+        <h2 className="text-2xl font-semibold">Experience</h2>
+          <div>
+            <h3 className="font-bold">Volunteer Work</h3>
+            <p><strong>Head of Persatuan Sepakbola ITB</strong> | Sept 2023 - Present</p>
+            <p>Improved team performance and built a lively sports culture at ITB.</p>
+          </div>
+          <div>
+            <p><strong>Information System Laboratory Assistant</strong> | Sep 2023 - Present, STEI ITB</p>
+            <p>Served as a teaching assistant for the IST Resource Management course.</p>
+          </div>
+        </section>
+        <section id="projects" className="min-h-screen flex flex-col justify-center items-center text-center">
+        <h2 className="text-2xl font-semibold">Project Experience</h2>
+          <div>
+            <p><strong>Software Testing and Monitoring for Ticketing and Reservation Systems</strong></p>
+            <p>Conducted integrated testing and monitoring using Apache JMeter, Prometheus, and Grafana.</p>
+          </div>
+        </section>
+        <section id="additional" className="min-h-screen flex flex-col justify-center items-center text-center">
+        <h2 className="text-2xl font-semibold">Additional</h2>
+          <p><strong>Bangkit Academy 2024 Cohort By Google, GoTo, Traveloka</strong> - Machine Learning Learning Path</p>
+          <p>Currently a cohort pursuing in-depth knowledge in machine learning algorithms, data analysis, and model deployment.</p>
+        </section>
+        <section id="skills" className="min-h-screen flex flex-col justify-center items-center text-center">
+        <h2 className="text-2xl font-semibold">Skills & Software</h2>
+          <p>Programming Language: Python (Numpy, Pandas), SQL, PostgreSQL, Java, C, PHP, JavaScript</p>
+          <p>Software: Microsoft Office, Github, Visual Studio Code</p>
+          <p>Language: Bahasa Indonesia, English (630 TOEFL ITP Score)</p>
+        </section>
+      </main>
+    </>
   );
 }
