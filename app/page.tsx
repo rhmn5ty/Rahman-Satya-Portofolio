@@ -50,18 +50,48 @@ export default function Home() {
           <p><strong>Bachelor in Information and System Technology, Institut Teknologi Bandung</strong><br />Aug 2021 - expected until Oct 2025</p>
           <p>Relevant Coursework: IST Resource Management, System Requirements Analysis, Organization & Management of Industrial Companies, Database Management, Object Oriented Programming</p>
         </section>
-        <section id="experience" className="min-h-screen flex flex-col justify-center items-center text-center">
-        <h2 className="text-2xl font-semibold">Experience</h2>
-          <div>
-            <h3 className="font-bold">Volunteer Work</h3>
-            <p><strong>Head of Persatuan Sepakbola ITB</strong> | Sept 2023 - Present</p>
-            <p>Improved team performance and built a lively sports culture at ITB.</p>
-          </div>
-          <div>
-            <p><strong>Information System Laboratory Assistant</strong> | Sep 2023 - Present, STEI ITB</p>
-            <p>Served as a teaching assistant for the IST Resource Management course.</p>
-          </div>
-        </section>
+        <section id="experience" className="min-h-screen flex flex-col justify-center items-center text-center px-4 py-8">
+  <h2 className="text-3xl font-bold text-gold mb-8">Volunteer and Work Experience</h2>
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Card 1 */}
+    <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
+      <Image src="/head-of-persatuan-sepakbola-itb.png" alt="Head of Persatuan Sepakbola ITB Logo" width={50} height={50} className="mx-auto"/>
+      <h3 className="text-xl font-semibold">Head of Persatuan Sepakbola ITB</h3>
+      <p className="text-sm text-gold">Sept 2023 - Present</p>
+      <p>Improved team performance and built a lively sports culture at ITB. Led key football events, encouraging skills, teamwork, and sportsmanship. Contributed to Indonesian football development.</p>
+    </div>
+    {/* Card 2 */}
+    <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
+      <Image src="/deputy-director-general-of-eventual-sports.png" alt="Deputy Director General of Eventual Sports Logo" width={50} height={50} className="mx-auto"/>
+      <h3 className="text-xl font-semibold">Deputy Director General of Eventual Sports</h3>
+      <p className="text-sm text-gold">Sep 2022 - Mar 2023</p>
+      <p>Ran the biggest sporting event at ITB, including TPB Cup and Olimpiade KM ITB.</p>
+    </div>
+    {/* Card 3 */}
+    <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
+      <Image src="/nominating-committee-for-kat-itb-2023.png" alt="Nominating Committee for KAT ITB 2023 Logo" width={50} height={50} className="mx-auto"/>
+      <h3 className="text-xl font-semibold">Nominating Committee for KAT ITB 2023</h3>
+      <p className="text-sm text-gold">Mar 2023 - Aug 2023</p>
+      <p>Collaborated in teams to identify and nurture relevant traits within the 2023 freshman class during the student orientation event.</p>
+    </div>
+    {/* Card 4 */}
+    <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
+      <Image src="/vice-project-officer-of-organizational-simulation-and-training-for-members.png" alt="Vice Project Officer of Organizational Simulation and Training for Members Logo" width={50} height={50} className="mx-auto"/>
+      <h3 className="text-xl font-semibold">Vice Project Officer of Organizational Simulation and Training for Members</h3>
+      <p className="text-sm text-gold">May 2023 - Sept 2023</p>
+      <p>Managed organizational training at HMIF ITB, coordinating with ITB leaders and institutions for permits and finances.</p>
+    </div>
+    {/* Card 5 */}
+    <div className="bg-dark-blue rounded-lg p-4 shadow-lg">
+      <Image src="/chairman-of-stei-cup-2022.png" alt="Chairman of STEI CUP 2022 Logo" width={50} height={50} className="mx-auto"/>
+      <h3 className="text-xl font-semibold">Chairman of STEI CUP 2022</h3>
+      <p className="text-sm text-gold">Jun 2022 - Sep 2022</p>
+      <p>Held the biggest sports competition event for STEI ITB students 2021 and 2022, including Futsal, Basketball, Badminton, and E-Sports.</p>
+    </div>
+  </div>
+</section>
+
+
         <section id="projects" className="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 className="text-2xl font-semibold">Project Experience</h2>
           <div>
